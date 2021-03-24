@@ -1,0 +1,7 @@
+vendor
+.idea
+.DS_Store
+main
+aliyun-dts-dispatcher
+dts-dispatcher*
+bin

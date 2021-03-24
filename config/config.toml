@@ -1,0 +1,37 @@
+version = "v1.0"
+env = "dev"
+
+[[dts]]
+name = "test1"
+topic = ""
+user = ""
+password = ""
+broker = "dts-cn-beijing.aliyuncs.com:18001"
+groupId = ""
+
+[[dts]]
+name = "test2"
+topic = ""
+user = "golang"
+password = "golang123"
+broker = "dts-cn-zhangbei-vpc.aliyuncs.com:18003"
+groupId = ""
+
+[etcd]
+endpoints = ["localhost:8899"]
+username = ""
+password = ""
+
+[log]
+#level:FATAL>ERROR>WARNING>INFO>TRACE>DEBUG
+#如果输出到控制台 logPath写stdout 否则输出到文件
+level = "DEBUG"
+#日志路径
+LogPath = "stdout"
+#是否每天0点切分新日志文件
+RotateDaily = true
+#是否启用日志切分
+Rotate = true
+
+[http]
+port = 9900
